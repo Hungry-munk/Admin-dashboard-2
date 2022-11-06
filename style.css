@@ -22,9 +22,24 @@ html {
 body {
     font-family: "Poppins-light", Nunito;
     height: 100%;
+    display: grid;
+    /* grid-template: clamp(150px, 15%, 200px) 1fr;
+    grid-template-rows: 150px 1fr ; */
+    grid-template: 180px 1fr 30px/ clamp(150px, 20%, 225px) 1fr ;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main"
+    "sidbar footer"
+    ;
 }
 
+header {
+    grid-area: header;
+}
 
+div.sidebar {
+    grid-area: sidebar;
+}
 
 
 ul {
@@ -33,4 +48,9 @@ ul {
 
 img[src="img/profile-image.png"] { 
     width: 40px; /* temporary sizing */
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
 }
