@@ -8,7 +8,7 @@
     --blue-colour: #1992D4;
     --green-colour: #84D392;
     --background-gray: #E2E8F0;
-    --backgroound-white: #fff;
+    --white: #fff;
 }
 
 @font-face {
@@ -49,7 +49,7 @@ header {
 
 header > div.top-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 70px;
 }
 
@@ -94,12 +94,37 @@ header > div.bottom-header {
 }
 
 header > div.bottom-header > .left-header {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+header > div.bottom-header > .left-header img {
+    width: 60px;
+}
+header > div.bottom-header > .left-header span:first-child{
+    font-weight: 700;
+    font-size: 0.8rem;
+}
 
+header > div.bottom-header > .left-header span:last-child {
+    font-weight: 700;
+    font-size: 1rem;
 }
 
 header > div.bottom-header > .right-header{
     display: flex;
     align-items: center;
+    gap: 20px;
+}
+
+header > div.bottom-header > .right-header button {
+    background-color: var(--blue-colour);
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 0.8rem;
 }
 
 /* header end */
@@ -115,6 +140,7 @@ ul {
 
 img[src="img/profile-image.png"] { 
     width: 40px; /* temporary sizing */
+    border-radius: 100%;
 }
 
 footer {
