@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+:root {
+    --blue-colour: #1992D4;
+    --green-colour: #84D392;
+    --background-gray: #E2E8F0;
+    --backgroound-white: #fff;
+}
 
 @font-face {
     font-family: "Nunito";
@@ -33,9 +39,70 @@ body {
     ;
 }
 
+/* header */
 header {
     grid-area: header;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 15px 40px;
 }
+
+header > div.top-header {
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+}
+
+header > div.top-header > .left-header {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 800px;
+}
+
+header > div.top-header > .left-header > .search-bar{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 5px;
+    background-color: var(--background-gray);
+    padding: 5px;
+    border-radius: 20px;
+    max-width: 800px;
+}
+
+header > div.top-header > .left-header > .search-bar > input {
+    flex: 1;
+    border: none;
+    background-color: inherit;
+    font-size: 1.2rem;
+}
+header > div.top-header > .left-header > .search-bar > input:hover,
+header > div.top-header > .left-header > .search-bar > input:focus {
+    outline: none;
+}
+
+header > div.top-header > .right-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+header > div.bottom-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header > div.bottom-header > .left-header {
+
+}
+
+header > div.bottom-header > .right-header{
+    display: flex;
+    align-items: center;
+}
+
+/* header end */
 
 div.sidebar {
     grid-area: sidebar;
