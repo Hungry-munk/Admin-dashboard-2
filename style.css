@@ -203,11 +203,13 @@ main .projects .project .project-icons {
 main .projects .project img {
     width: 35px;
 }
+/* main content end */
+
+/* side content */
 main .side-content {
     flex: 1;
 }
 
-/* side content */
 div.side-content {
     display: flex;
     flex-direction: column;
@@ -224,7 +226,7 @@ div.side-content .announcements {
     max-height: 500px;
     overflow: hidden visible;
     background-color: var(--white);
-    border-radius: 15px; 
+    border-radius: 15px;     background-color: var(--white);
 }
 
 div.side-content .announcement:not(.announcement:last-child) {
@@ -233,9 +235,39 @@ div.side-content .announcement:not(.announcement:last-child) {
 
 div.side-content .announcement .announcement-content{font-size: 0.85rem;}
 
+/* trending */
+div.side-content .trending {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-height: 400px;
+    background-color: var(--white);
+    border-radius: 15px;   
+    overflow: hidden visible;
+}
+
+.trending-person {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.trending-person img {
+    align-self: flex-start;
+    transform: scale(1.1);
+}
+
+.trending-person-bio {
+    font-size: 0.7rem;
+}
 
 
-/* main content end */
+/* trending end */
+
+/* side content end */
+
+
 
 ul {
     list-style-type: none;
