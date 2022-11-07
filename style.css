@@ -35,7 +35,7 @@ body {
     grid-template-areas: 
     "sidebar header"
     "sidebar main"
-    "sidbar footer"
+    "sidebar footer"
     ;
 }
 
@@ -160,8 +160,82 @@ div.sidebar .sidebar-main-icons ul li,
 div.sidebar .sidebar-other-icons ul li {
     display: flex;
     align-items: center;
+    gap: 5px;
 }
-/* sidebar */
+/* sidebar end*/
+
+/* main content */
+main {
+    display: flex;
+    background-color: var(--background-gray);
+    align-items: flex-start;
+}
+
+main .projects {
+    flex: 3;
+    display: grid;
+    padding:20px;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+
+}
+
+main .projects .project {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 25px;
+    padding:20px;
+    border-left: solid black 10px;
+}
+
+main .projects .project .project-content {
+    max-width: 400px;
+}
+main .projects .project .project-icons {
+    display: flex;
+    gap:10px;
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-top: auto;
+}
+
+main .projects .project img {
+    width: 35px;
+}
+main .side-content {
+    flex: 1;
+}
+
+/* side content */
+div.side-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px ;
+    scrollbar-width: 1vh;
+}
+
+div.side-content .announcements {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 500px;
+    overflow: hidden visible;
+    background-color: var(--white);
+    border-radius: 15px; 
+}
+
+div.side-content .announcement:not(.announcement:last-child) {
+    border-bottom: 1px var(--background-gray) solid;
+}
+
+div.side-content .announcement .announcement-content{font-size: 0.85rem;}
+
+
+
+/* main content end */
 
 ul {
     list-style-type: none;
@@ -175,4 +249,5 @@ img[src="img/profile-image.png"] {
 footer {
     grid-area: footer;
     text-align: center;
+    background-color: var(--background-gray);
 }
