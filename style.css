@@ -216,6 +216,7 @@ div.side-content {
     gap: 50px;
     padding: 20px ;
     scrollbar-width: 1vh;
+    max-width: 320px;
 }
 
 div.side-content .announcements {
@@ -247,21 +248,32 @@ div.side-content .trending {
     overflow: hidden visible;
 }
 
+div.side-content h3 {
+    padding-left: 5px;
+}
+
 .trending-person {
     display: flex;
     align-items: center;
     gap: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .trending-person img {
     align-self: flex-start;
     transform: scale(1.1);
+    padding-top: 7px;
+
 }
 
 .trending-person-bio {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
-
+.trending-person-info {
+    display: flex;
+    flex-direction: column;
+}
 
 /* trending end */
 
