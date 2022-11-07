@@ -129,10 +129,39 @@ header > div.bottom-header > .right-header button {
 
 /* header end */
 
-div.sidebar {
+/* sidebar */
+div.sidebar{
     grid-area: sidebar;
+    background-color: var(--blue-colour);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    color: var(--white);
+    font-weight: 600;
+}
+.sidebar-icons {
+    display: flex;
+    flex-direction: column;
+    gap: inherit;
+    font-size: 0.9rem;
+    padding-right: 10px;
+}
+div.sidebar h2 {
+    text-align: center;
+    padding: 20px 0;
 }
 
+div.sidebar img{
+    transform: scale(0.7);
+}
+
+div.sidebar .sidebar-main-icons ul li,
+div.sidebar .sidebar-other-icons ul li {
+    display: flex;
+    align-items: center;
+}
+/* sidebar */
 
 ul {
     list-style-type: none;
